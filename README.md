@@ -17,3 +17,20 @@
 - Library: ammo
 - Environment: barracks
 
+##Schema
+
+###Users
+- username
+- fname
+- lname
+- github_auth
+
+###Snippet
+
+- gist_id
+- name
+- category
+- tags
+- language
+- description
+- user_id

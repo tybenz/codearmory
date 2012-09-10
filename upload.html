@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Armory</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-simplex.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/armory.css">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a href="#" class="brand">Code Armory</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Arsenal</a></li>
+            <li><a href="upload.html">Upload</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" class="container">
+    <div class="row">
+      <div class="span12">
+        <form action="upload.php" method="post">
+          <label for="name">Name</label>
+          <input name="name">
+          <label for="gist-id">Gist ID</label>
+          <input name="gist-id">
+          <label for="category">Category</label>
+          <input name="category">
+          <label for="tags">Tags</label>
+          <input name="tags"><br><br>
+          <input type="submit" value="Submit">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
