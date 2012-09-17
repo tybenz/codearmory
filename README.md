@@ -24,6 +24,7 @@
 - fname
 - lname
 - github_auth
+- admin
 
 ###Snippet
 

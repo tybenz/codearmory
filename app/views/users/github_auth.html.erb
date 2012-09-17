@@ -1,0 +1,16 @@
+<% content_for(:javascripts) do %>
+  <script type="text/javascript">
+    $(function() {
+      console.log('submit');
+      $("#access_token").submit();
+    });
+  </script>
+<% end %>
+
+<form id="access_token" style="display: none" action="<%= @access_token %>" method="POST">
+  <input name="client_id" value="<%= @params[:client_id] %>">
+  <input name="client_secret" value="<%= @params[:client_secret] %>">
+  <input name="code" value="<%= @params[:code] %>">
+  <input name="redirect_uri" value="<%= @params[:redirect_uri] %>">
+  <input type="submit" value="Submit">
+</form>

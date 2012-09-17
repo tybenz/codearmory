@@ -1,0 +1,31 @@
+<% content_for(:javascripts) do %>
+  <%= javascript_include_tag "load_gists" %>
+<% end %>
+<div class="row">
+  <div class="span12">
+    <div class="hero-unit">
+      <h1>Equip Yourself</h1>
+      <p>Your one-stop gun shop. All the most lethal snippets and walkthroughs.</p>
+    </div>
+  </div>
+</div>
+<%=@gists.to_json%>
+<%i=0%>
+<% @gists[0..9].each_slice(3) do |g1,g2,g3| %>
+  <div class="row">
+    <div class="span4">
+      <script type="text/javascript" src="<%= g1 %>"></script>
+    </div>
+    <% if g2 %>
+      <div class="span4">
+        <script type="text/javascript" src="<%= g2 %>"></script>
+      </div>
+    <% end %>
+    <% if g2 %>
+      <div class="span4">
+        <script type="text/javascript" src="<%= g3 %>"></script>
+      </div>
+    <% end %>
+  </div>
+  <%i+=1%>
+<% end %>

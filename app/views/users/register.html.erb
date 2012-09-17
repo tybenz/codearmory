@@ -1,0 +1,9 @@
+<h2>Sign up</h2>
+
+<%= form_for(@user, :url => registration_path(@user)) do |f| %>
+
+  <%= f.hidden_field :username, :value => @user.username %>
+  <%= f.hidden_field :token, :value => @user.token %>
+
+  <%= f.submit "Sign up" %>
+<% end %>
