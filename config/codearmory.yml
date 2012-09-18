@@ -11,5 +11,5 @@ staging:
   github_client_secret: 7c546a29dd775fbea6bedbb6971c1d2164481722
 
 production:
-  github_client_id: 422d96a0b24842754d35
-  github_client_secret: 7c546a29dd775fbea6bedbb6971c1d2164481722
+  github_client_id: b81d8ecb7e247e4f5a2b
+  github_client_secret: 58b42f0c3898efeec482bc3144e77f16555da17f
