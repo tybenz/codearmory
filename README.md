@@ -13,6 +13,7 @@
 
 ##Verbage
 
+- Contest: skirmish
 - Snippet: weapon
 - Library: ammo
 - Environment: barracks

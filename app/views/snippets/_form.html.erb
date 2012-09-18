@@ -1,0 +1,20 @@
+<%= form_for @snippet do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+
+  <%= f.label :gist_id, "Gist ID" %><br>
+  <%= f.text_field :gist_id %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
+
+  <%= f.label :category_list, 'Category' %><br>
+  <%= f.text_field :category_list %>
+
+  <%= f.label :tag_list, 'Tags' %><br>
+  <%= f.text_field :tag_list %><br>
+
+  <%= f.submit %>
+<% end %>
