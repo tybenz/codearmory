@@ -2,7 +2,10 @@
   <%= f.hidden_field :user_id, :value => current_user.id %>
 
   <%= f.label :gist_id, "Gist ID" %><br>
-  <%= f.text_field :gist_id %>
+  <%= f.text_field :gist_id %>or<br>
+
+  <%= label :gist, :gist_content %><br>
+  <%= text_area :gist, :gist_content %>
 
   <%= f.label :name %><br>
   <%= f.text_field :name %>

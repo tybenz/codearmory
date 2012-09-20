@@ -11,13 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120917215419) do
+ActiveRecord::Schema.define(:version => 20120920180322) do
 
   create_table "snippets", :force => true do |t|
     t.integer  "user_id"
     t.integer  "gist_id"
     t.string   "name"
-    t.string   "language"
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false

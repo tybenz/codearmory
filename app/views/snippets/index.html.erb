@@ -4,11 +4,15 @@
 <div class="row">
   <% @snippets.each_slice(2) do |snip1, snip2| %>
     <div class="span6">
-      <script type="text/javascript" src="https://gist.github.com/<%= snip1.gist_id %>.js"></script>
+      <a href="<%= snippet_path(snip1) %>">
+        <script type="text/javascript" src="https://gist.github.com/<%= snip1.gist_id %>.js"></script>
+      </a>
     </div>
     <% if snip2 %>
       <div class="span6">
-        <script type="text/javascript" src="https://gist.github.com/<%= snip2.gist_id %>.js"></script>
+        <a href="<%= snippet_path(snip2) %>">
+          <script type="text/javascript" src="https://gist.github.com/<%= snip2.gist_id %>.js"></script>
+        </a>
       </div>
     <% end %>
   <% end %>
